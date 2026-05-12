@@ -1,0 +1,14 @@
+step,elapsed_seconds,step_time_ms,pending_events,processed_total,processed_this_step,batch_size,source
+0,0.40704129997175187,404.4817999820225,300,25,25,25,real_streaming_indexer_once_batches
+1,0.7796577999833971,370.20780000602826,275,50,25,25,real_streaming_indexer_once_batches
+2,1.133687799971085,351.6593999811448,250,75,25,25,real_streaming_indexer_once_batches
+3,1.4867432999890298,351.1335999937728,225,100,25,25,real_streaming_indexer_once_batches
+4,1.8480697000049986,358.7511000223458,200,125,25,25,real_streaming_indexer_once_batches
+5,2.205563900002744,354.774700012058,175,150,25,25,real_streaming_indexer_once_batches
+6,2.5608954000053927,353.0563000240363,150,175,25,25,real_streaming_indexer_once_batches
+7,2.9364465999533422,372.99899995559826,125,200,25,25,real_streaming_indexer_once_batches
+8,3.2888399999937974,350.04340001614764,100,225,25,25,real_streaming_indexer_once_batches
+9,3.6223903999780305,331.16589998826385,75,250,25,25,real_streaming_indexer_once_batches
+10,3.9707860999624245,346.4974999660626,50,275,25,25,real_streaming_indexer_once_batches
+11,4.334660199994687,361.4291000412777,25,300,25,25,real_streaming_indexer_once_batches
+12,4.3371457000030205,,0,300,0,25,real_streaming_indexer_once_batches

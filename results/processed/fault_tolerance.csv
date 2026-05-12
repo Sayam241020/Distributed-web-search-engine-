@@ -1,0 +1,2 @@
+scenario,workers_started,killed_worker_pid,workers_seen_in_storage,completed_pages,documents_stored,completion_time_seconds,frontier_size_after_run,processing_size_after_run,recovered_urls,index_outbox_pending,graph_outbox_pending,term_postings_count,pagerank_nodes_count,index_events_processed,graph_events_processed,residual_pushes
+one_worker_terminated,4,16704,"[""fault-1"", ""fault-2"", ""fault-3"", ""fault-4""]",80,80,3.7334901000140235,200,0,0,0,0,1500,300,80,80,3

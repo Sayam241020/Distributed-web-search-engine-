@@ -1,0 +1,43 @@
+{
+  "documents": 3,
+  "indexer": "streaming_indexer",
+  "events_processed": 3,
+  "term_postings_count": 9,
+  "kiwi_postings": [
+    {
+      "term": "kiwi",
+      "url": "http://known.local/alpha",
+      "created_at": "2026-05-07 09:48:41.342000",
+      "page_id": "known-1",
+      "term_frequency": 3,
+      "title": "Alpha",
+      "updated_at": "2026-05-07 09:48:41.342000"
+    },
+    {
+      "term": "kiwi",
+      "url": "http://known.local/beta",
+      "created_at": "2026-05-07 09:48:41.376000",
+      "page_id": "known-2",
+      "term_frequency": 1,
+      "title": "Beta",
+      "updated_at": "2026-05-07 09:48:41.376000"
+    }
+  ],
+  "kiwi_top_result": {
+    "url": "http://known.local/alpha",
+    "title": "Alpha",
+    "score": 3.0,
+    "term_score": 3,
+    "authority_score": 1.0,
+    "snippet": "kiwi kiwi kiwi crawler alpha"
+  },
+  "unique_top_result": {
+    "url": "http://known.local/gamma",
+    "title": "Gamma",
+    "score": 1.0,
+    "term_score": 1,
+    "authority_score": 1.0,
+    "snippet": "nebulaunique gamma search"
+  },
+  "passed": true
+}

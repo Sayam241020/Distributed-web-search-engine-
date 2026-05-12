@@ -1,0 +1,6 @@
+documents,unique_terms,total_tokens,postings,index_size_bytes,indexing_time_seconds,events_processed,indexer
+50,112,3356,390,79660,0.8760952000156976,50,streaming_indexer
+100,212,6931,790,161530,1.694207699969411,100,streaming_indexer
+200,412,13907,1590,327870,3.397908799990546,200,streaming_indexer
+400,812,27874,3190,660551,5.655781899986323,400,streaming_indexer
+800,1612,55883,6390,1325919,10.96225240000058,800,streaming_indexer
