@@ -1,0 +1,105 @@
+{
+  "seed_stdout": "",
+  "index_stdout": "{'reclaimed': 0, 'events_processed': 0}\n",
+  "pagerank_stdout": "{'events_processed': 0, 'residual_pushes': 6}\n",
+  "web_process_pid": 3572,
+  "killed_worker_pid": 49096,
+  "worker_process_ids": [
+    49096,
+    29132,
+    42024
+  ],
+  "worker_ids_seen_in_storage": [
+    "dist-worker-2",
+    "dist-worker-3"
+  ],
+  "crawled_urls": [
+    "http://127.0.0.1:9191/",
+    "http://127.0.0.1:9191/alpha",
+    "http://127.0.0.1:9191/beta",
+    "http://127.0.0.1:9191/cycle-a",
+    "http://127.0.0.1:9191/cycle-b",
+    "http://127.0.0.1:9191/slow"
+  ],
+  "pages_metadata_count": 6,
+  "pages_documents_count": 6,
+  "term_postings_count": 40,
+  "pagerank_nodes_count": 9,
+  "graph_outbox_pending": 0,
+  "index_outbox_pending": 0,
+  "frontier_size": 0,
+  "active_domains_size": 0,
+  "processing_size": 0,
+  "kiwi_search": {
+    "query": "kiwi crawler",
+    "terms": [
+      "kiwi",
+      "crawl"
+    ],
+    "results": [
+      {
+        "url": "http://127.0.0.1:9191/alpha",
+        "title": "Alpha Ranking Page",
+        "score": 4.302357516888163,
+        "term_score": 6,
+        "authority_score": 0.7170595861480271,
+        "snippet": "Alpha Ranking Page kiwi kiwi kiwi kiwi kiwi crawler ranking alpha. cycle"
+      },
+      {
+        "url": "http://127.0.0.1:9191/slow",
+        "title": "Slow Page",
+        "score": 0.3875994683424088,
+        "term_score": 1,
+        "authority_score": 0.3875994683424088,
+        "snippet": "Slow Page slowpage crawler content"
+      },
+      {
+        "url": "http://127.0.0.1:9191/beta",
+        "title": "Beta Unique Page",
+        "score": 0.38759946834240866,
+        "term_score": 1,
+        "authority_score": 0.38759946834240866,
+        "snippet": "Beta Unique Page nebulaunique crawler search beta. alpha"
+      },
+      {
+        "url": "http://127.0.0.1:9191/",
+        "title": "Fixture Home",
+        "score": 0.3456300991588358,
+        "term_score": 1,
+        "authority_score": 0.3456300991588358,
+        "snippet": "Fixture Home Distributed crawler fixture Alpha relative Alpha duplicate with fragment Beta absolute Cycle start Broken link Slow page Non HTML resource Redirect page"
+      }
+    ]
+  },
+  "unique_search": {
+    "query": "nebulaunique",
+    "terms": [
+      "nebulaunique"
+    ],
+    "results": [
+      {
+        "url": "http://127.0.0.1:9191/beta",
+        "title": "Beta Unique Page",
+        "score": 0.38759946834240866,
+        "term_score": 1,
+        "authority_score": 0.38759946834240866,
+        "snippet": "Beta Unique Page nebulaunique crawler search beta. alpha"
+      }
+    ]
+  },
+  "unknown_search": {
+    "query": "notpresentterm",
+    "terms": [
+      "notpresentterm"
+    ],
+    "results": []
+  },
+  "script_noise_indexed": false,
+  "style_noise_indexed": false,
+  "alpha_url_count": 1,
+  "logs": {
+    "dist-worker-1.log": "2026-05-07 21:45:28,953 - bloom_filter - INFO - Bloom Filter initialized: size=143,775,875 bits, hash_count=9, capacity=10,000,000, error_rate=0.001\n2026-05-07 21:45:28,962 - politeness - INFO - PolitenessManager initialized (default_delay=0.1s, max_request_timeout=15.0s)\n",
+    "dist-worker-2.log": "2026-05-07 21:45:28,953 - bloom_filter - INFO - Bloom Filter initialized: size=143,775,875 bits, hash_count=9, capacity=10,000,000, error_rate=0.001\n2026-05-07 21:45:28,960 - politeness - INFO - PolitenessManager initialized (default_delay=0.1s, max_request_timeout=15.0s)\n2026-05-07 21:45:29,973 - optimized_storage - INFO - Database indexes created\n2026-05-07 21:45:29,973 - optimized_storage - INFO - OptimizedStorage initialized (batch_size=1, transactions=True)\n2026-05-07 21:45:29,974 - robots_handler_async - INFO - AsyncRobotsHandler initialized (cache_ttl=86400s)\n2026-05-07 21:45:29,975 - __main__ - INFO - Worker dist-worker-2 initialized (decentralized mode)\n2026-05-07 21:45:29,975 - __main__ - INFO - [dist-worker-2] Starting decentralized worker...\n2026-05-07 21:45:29,975 - __main__ - INFO -   Max pages: 5\n2026-05-07 21:45:29,975 - __main__ - INFO -   Idle timeout: 8s\n2026-05-07 21:45:31,702 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/asset.txt\n2026-05-07 21:45:31,709 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/alpha\n2026-05-07 21:45:31,732 - __main__ - INFO - [dist-worker-2] Crawled: http://127.0.0.1:9191/alpha (1 links extracted, queued as 69fcbaa30731d0e19b7cf6b0)\n2026-05-07 21:45:31,742 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 39.6% saved)\n2026-05-07 21:45:31,746 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/cycle-b\n2026-05-07 21:45:31,763 - __main__ - INFO - [dist-worker-2] Crawled: http://127.0.0.1:9191/cycle-b (1 links extracted, queued as 69fcbaa30731d0e19b7cf6b3)\n2026-05-07 21:45:31,772 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 31.6% saved)\n2026-05-07 21:45:31,776 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/broken\n2026-05-07 21:45:31,781 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/asset.txt\n2026-05-07 21:45:31,786 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/broken\n2026-05-07 21:45:31,791 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/asset.txt\n2026-05-07 21:45:31,795 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/broken\n2026-05-07 21:45:31,797 - __main__ - WARNING - [dist-worker-2] Dropping failed URL after retries: http://127.0.0.1:9191/broken\n2026-05-07 21:45:31,799 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/asset.txt\n2026-05-07 21:45:31,802 - __main__ - WARNING - [dist-worker-2] Dropping failed URL after retries: http://127.0.0.1:9191/asset.txt\n2026-05-07 21:45:39,877 - __main__ - INFO - [dist-worker-2] Frontier empty for 8s, stopping\n2026-05-07 21:45:39,877 - __main__ - INFO - [dist-worker-2] Shutting down...\n2026-05-07 21:45:39,882 - optimized_storage - INFO - Storage closed\n2026-05-07 21:45:39,884 - __main__ - INFO - \n============================================================\n2026-05-07 21:45:39,884 - __main__ - INFO - Worker dist-worker-2 Final Statistics\n2026-05-07 21:45:39,884 - __main__ - INFO - ============================================================\n2026-05-07 21:45:39,884 - __main__ - INFO - Pages crawled:        2\n2026-05-07 21:45:39,884 - __main__ - INFO - Links extracted:      2\n2026-05-07 21:45:39,884 - __main__ - INFO - Links added:          0\n2026-05-07 21:45:39,884 - __main__ - INFO - Links duplicate:      2\n2026-05-07 21:45:39,884 - __main__ - INFO - Links robots blocked: 0\n2026-05-07 21:45:39,884 - __main__ - INFO - Domain locked skips:  1\n2026-05-07 21:45:39,884 - __main__ - INFO - Recovered stale:      0\n2026-05-07 21:45:39,884 - __main__ - INFO - Zombie aborts:        0\n2026-05-07 21:45:39,884 - __main__ - INFO - Content duplicates:   0\n2026-05-07 21:45:39,884 - __main__ - INFO - Errors:               3\n2026-05-07 21:45:39,884 - __main__ - INFO - Timeouts:             0\n2026-05-07 21:45:39,884 - __main__ - INFO - ============================================================\n2026-05-07 21:45:39,884 - __main__ - INFO - \nStorage Statistics:\n2026-05-07 21:45:39,884 - __main__ - INFO -   Pages stored:     6\n2026-05-07 21:45:39,884 - __main__ - INFO -   Compression:      43.8% saved\n2026-05-07 21:45:39,884 - __main__ - INFO -   Space saved:      0.0 MB\n2026-05-07 21:45:39,884 - __main__ - INFO - \n\\u2705 Worker dist-worker-2 stopped\n",
+    "dist-worker-3.log": "2026-05-07 21:45:28,953 - bloom_filter - INFO - Bloom Filter initialized: size=143,775,875 bits, hash_count=9, capacity=10,000,000, error_rate=0.001\n2026-05-07 21:45:28,962 - politeness - INFO - PolitenessManager initialized (default_delay=0.1s, max_request_timeout=15.0s)\n2026-05-07 21:45:29,877 - optimized_storage - INFO - Database indexes created\n2026-05-07 21:45:29,877 - optimized_storage - INFO - OptimizedStorage initialized (batch_size=1, transactions=True)\n2026-05-07 21:45:29,879 - robots_handler_async - INFO - AsyncRobotsHandler initialized (cache_ttl=86400s)\n2026-05-07 21:45:29,880 - __main__ - INFO - Worker dist-worker-3 initialized (decentralized mode)\n2026-05-07 21:45:29,880 - __main__ - INFO - [dist-worker-3] Starting decentralized worker...\n2026-05-07 21:45:29,880 - __main__ - INFO -   Max pages: 5\n2026-05-07 21:45:29,880 - __main__ - INFO -   Idle timeout: 8s\n2026-05-07 21:45:29,886 - __main__ - INFO - [dist-worker-3] Crawling: http://127.0.0.1:9191/\n2026-05-07 21:45:29,903 - robots_handler_async - INFO - \\U0001f680 Fetching robots.txt for 1 domains in parallel...\n2026-05-07 21:45:29,925 - robots_handler_async - INFO - \\u2705 Fetched 1 robots.txt in 0.02s (0.02s avg)\n2026-05-07 21:45:29,935 - __main__ - INFO - [dist-worker-3] Crawled: http://127.0.0.1:9191/ (8 links extracted, queued as 69fcbaa1e3e294aa81fafadc)\n2026-05-07 21:45:29,943 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 58.7% saved)\n2026-05-07 21:45:30,003 - __main__ - INFO - [dist-worker-3] Crawling: http://127.0.0.1:9191/slow\n2026-05-07 21:45:31,517 - __main__ - INFO - [dist-worker-3] Crawled: http://127.0.0.1:9191/slow (0 links extracted, queued as 69fcbaa3e3e294aa81fafadf)\n2026-05-07 21:45:31,529 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 53.5% saved)\n2026-05-07 21:45:31,534 - __main__ - INFO - [dist-worker-3] Crawling: http://127.0.0.1:9191/redirect\n2026-05-07 21:45:31,546 - __main__ - INFO - [dist-worker-3] Crawled: http://127.0.0.1:9191/redirect (1 links extracted, queued as 69fcbaa3e3e294aa81fafae2)\n2026-05-07 21:45:31,554 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 49.9% saved)\n2026-05-07 21:45:31,557 - __main__ - INFO - [dist-worker-3] Crawling: http://127.0.0.1:9191/cycle-a\n2026-05-07 21:45:31,569 - __main__ - INFO - [dist-worker-3] Crawled: http://127.0.0.1:9191/cycle-a (1 links extracted, queued as 69fcbaa3e3e294aa81fafae5)\n2026-05-07 21:45:31,576 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 47.0% saved)\n2026-05-07 21:45:31,579 - __main__ - INFO - [dist-worker-3] Crawling: http://127.0.0.1:9191/broken\n2026-05-07 21:45:31,586 - __main__ - INFO - [dist-worker-3] Crawling: http://127.0.0.1:9191/beta\n2026-05-07 21:45:31,596 - __main__ - INFO - [dist-worker-3] Crawled: http://127.0.0.1:9191/beta (1 links extracted, queued as 69fcbaa3e3e294aa81fafae8)\n2026-05-07 21:45:31,609 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 45.2% saved)\n2026-05-07 21:45:31,611 - __main__ - INFO - [dist-worker-3] Reached max pages: 5\n2026-05-07 21:45:31,611 - __main__ - INFO - [dist-worker-3] Shutting down...\n2026-05-07 21:45:31,619 - optimized_storage - INFO - Storage closed\n2026-05-07 21:45:31,619 - __main__ - INFO - \n============================================================\n2026-05-07 21:45:31,619 - __main__ - INFO - Worker dist-worker-3 Final Statistics\n2026-05-07 21:45:31,619 - __main__ - INFO - ============================================================\n2026-05-07 21:45:31,619 - __main__ - INFO - Pages crawled:        5\n2026-05-07 21:45:31,619 - __main__ - INFO - Links extracted:      11\n2026-05-07 21:45:31,619 - __main__ - INFO - Links added:          8\n2026-05-07 21:45:31,619 - __main__ - INFO - Links duplicate:      3\n2026-05-07 21:45:31,620 - __main__ - INFO - Links robots blocked: 0\n2026-05-07 21:45:31,620 - __main__ - INFO - Domain locked skips:  1\n2026-05-07 21:45:31,620 - __main__ - INFO - Recovered stale:      0\n2026-05-07 21:45:31,620 - __main__ - INFO - Zombie aborts:        0\n2026-05-07 21:45:31,620 - __main__ - INFO - Content duplicates:   0\n2026-05-07 21:45:31,620 - __main__ - INFO - Errors:               1\n2026-05-07 21:45:31,620 - __main__ - INFO - Timeouts:             0\n2026-05-07 21:45:31,620 - __main__ - INFO - ============================================================\n2026-05-07 21:45:31,620 - __main__ - INFO - \nStorage Statistics:\n2026-05-07 21:45:31,620 - __main__ - INFO -   Pages stored:     4\n2026-05-07 21:45:31,620 - __main__ - INFO -   Compression:      47.0% saved\n2026-05-07 21:45:31,620 - __main__ - INFO -   Space saved:      0.0 MB\n2026-05-07 21:45:31,620 - __main__ - INFO - \n\\u2705 Worker dist-worker-3 stopped\n"
+  }
+}

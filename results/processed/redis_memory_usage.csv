@@ -1,0 +1,4 @@
+key,memory_bytes,items,notes
+report:redis:frontier,1173480,10500,10000_preloaded_plus_benchmark_insertions
+report:redis:bloom,1600,,sparse_bitmap_after_benchmark_bits
+report:redis:robots:example.local,160,3,robots_hash_with_24h_ttl

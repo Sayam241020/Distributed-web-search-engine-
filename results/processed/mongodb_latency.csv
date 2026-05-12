@@ -1,0 +1,5 @@
+operation,runs,mean_ms,median_ms,p95_ms,notes
+page_transaction_2_writes,30,4.466236666000138,4.020950000267476,4.662799998186529,same_commit_shape_as_page_plus_outbox
+outbox_findOneAndUpdate_claim,50,4.593208000296727,4.527299985056743,6.131000001914799,pending_to_processing_claim_pattern
+term_postings_upsert,100,2.4418890004744753,2.1343500120565295,3.584299993235618,streaming_indexer_posting_write
+search_aggregation_top10,50,3.050158000551164,2.9560500115621835,3.6703000077977777,match_group_sort_limit_in_mongo

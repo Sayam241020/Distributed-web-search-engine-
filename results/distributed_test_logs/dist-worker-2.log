@@ -1,0 +1,50 @@
+2026-05-07 21:45:28,953 - bloom_filter - INFO - Bloom Filter initialized: size=143,775,875 bits, hash_count=9, capacity=10,000,000, error_rate=0.001
+2026-05-07 21:45:28,960 - politeness - INFO - PolitenessManager initialized (default_delay=0.1s, max_request_timeout=15.0s)
+2026-05-07 21:45:29,973 - optimized_storage - INFO - Database indexes created
+2026-05-07 21:45:29,973 - optimized_storage - INFO - OptimizedStorage initialized (batch_size=1, transactions=True)
+2026-05-07 21:45:29,974 - robots_handler_async - INFO - AsyncRobotsHandler initialized (cache_ttl=86400s)
+2026-05-07 21:45:29,975 - __main__ - INFO - Worker dist-worker-2 initialized (decentralized mode)
+2026-05-07 21:45:29,975 - __main__ - INFO - [dist-worker-2] Starting decentralized worker...
+2026-05-07 21:45:29,975 - __main__ - INFO -   Max pages: 5
+2026-05-07 21:45:29,975 - __main__ - INFO -   Idle timeout: 8s
+2026-05-07 21:45:31,702 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/asset.txt
+2026-05-07 21:45:31,709 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/alpha
+2026-05-07 21:45:31,732 - __main__ - INFO - [dist-worker-2] Crawled: http://127.0.0.1:9191/alpha (1 links extracted, queued as 69fcbaa30731d0e19b7cf6b0)
+2026-05-07 21:45:31,742 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 39.6% saved)
+2026-05-07 21:45:31,746 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/cycle-b
+2026-05-07 21:45:31,763 - __main__ - INFO - [dist-worker-2] Crawled: http://127.0.0.1:9191/cycle-b (1 links extracted, queued as 69fcbaa30731d0e19b7cf6b3)
+2026-05-07 21:45:31,772 - optimized_storage - INFO - Batch flushed: 1 committed, 0 duplicate, 0 failed (compression: 31.6% saved)
+2026-05-07 21:45:31,776 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/broken
+2026-05-07 21:45:31,781 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/asset.txt
+2026-05-07 21:45:31,786 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/broken
+2026-05-07 21:45:31,791 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/asset.txt
+2026-05-07 21:45:31,795 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/broken
+2026-05-07 21:45:31,797 - __main__ - WARNING - [dist-worker-2] Dropping failed URL after retries: http://127.0.0.1:9191/broken
+2026-05-07 21:45:31,799 - __main__ - INFO - [dist-worker-2] Crawling: http://127.0.0.1:9191/asset.txt
+2026-05-07 21:45:31,802 - __main__ - WARNING - [dist-worker-2] Dropping failed URL after retries: http://127.0.0.1:9191/asset.txt
+2026-05-07 21:45:39,877 - __main__ - INFO - [dist-worker-2] Frontier empty for 8s, stopping
+2026-05-07 21:45:39,877 - __main__ - INFO - [dist-worker-2] Shutting down...
+2026-05-07 21:45:39,882 - optimized_storage - INFO - Storage closed
+2026-05-07 21:45:39,884 - __main__ - INFO - 
+============================================================
+2026-05-07 21:45:39,884 - __main__ - INFO - Worker dist-worker-2 Final Statistics
+2026-05-07 21:45:39,884 - __main__ - INFO - ============================================================
+2026-05-07 21:45:39,884 - __main__ - INFO - Pages crawled:        2
+2026-05-07 21:45:39,884 - __main__ - INFO - Links extracted:      2
+2026-05-07 21:45:39,884 - __main__ - INFO - Links added:          0
+2026-05-07 21:45:39,884 - __main__ - INFO - Links duplicate:      2
+2026-05-07 21:45:39,884 - __main__ - INFO - Links robots blocked: 0
+2026-05-07 21:45:39,884 - __main__ - INFO - Domain locked skips:  1
+2026-05-07 21:45:39,884 - __main__ - INFO - Recovered stale:      0
+2026-05-07 21:45:39,884 - __main__ - INFO - Zombie aborts:        0
+2026-05-07 21:45:39,884 - __main__ - INFO - Content duplicates:   0
+2026-05-07 21:45:39,884 - __main__ - INFO - Errors:               3
+2026-05-07 21:45:39,884 - __main__ - INFO - Timeouts:             0
+2026-05-07 21:45:39,884 - __main__ - INFO - ============================================================
+2026-05-07 21:45:39,884 - __main__ - INFO - 
+Storage Statistics:
+2026-05-07 21:45:39,884 - __main__ - INFO -   Pages stored:     6
+2026-05-07 21:45:39,884 - __main__ - INFO -   Compression:      43.8% saved
+2026-05-07 21:45:39,884 - __main__ - INFO -   Space saved:      0.0 MB
+2026-05-07 21:45:39,884 - __main__ - INFO - 
+\u2705 Worker dist-worker-2 stopped

@@ -1,0 +1,2 @@
+capacity_urls,error_rate,bloom_bits,bloom_mb,optimal_hash_count,implementation_hash_count,sample_urls,sample_exact_set_bytes,exact_set_bytes_per_url,extrapolated_exact_set_10m_mb,savings_percent
+10000000,0.001,143775875,17.13941991329193,9.965784238878912,9,100000,12572300,125.723,1198.9879608154297,98.57050942349451
